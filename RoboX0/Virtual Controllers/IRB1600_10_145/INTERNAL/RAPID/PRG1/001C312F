@@ -1,0 +1,52 @@
+MODULE Module1
+    !***********************************************************
+    !
+    ! Module:  Module1
+    !
+    ! Description:
+    !   <Insert description here>
+    !
+    ! Author: Sirius
+    !
+    ! Version: 1.0
+    !
+    !***********************************************************
+    
+    
+    !***********************************************************
+    !
+    ! Procedure main
+    !
+    !   This is the entry point of your program
+    !
+    !***********************************************************
+    PROC main()
+        !Add your code here
+    ENDPROC
+    
+    
+    PROC moveCube(robtarget pfrom, robtarget pto)
+        grab(pfrom);
+        stand(pto);
+    ENDPROC
+    
+    PROC grab(robtarget point)
+        MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,30),v100,fine,gripper\WObj:=Workobject_1;
+        PulseDO\High,do_GripClose;
+
+        !WaitDI di_GripClosed,1;
+        MoveJ point,v100,z1,gripper\WObj:=Workobject_1;
+    ENDPROC
+    
+    PROC stand(robtarget point)
+        MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,30),v100,fine,gripper\WObj:=Workobject_1;
+        PulseDO\High,do_GripOpen;
+        !WaitDI di_GripOpened,1;
+        MoveJ point,v100,z1,gripper\WObj:=Workobject_1;
+    ENDPROC
+    
+    
+    
+ENDMODULE
