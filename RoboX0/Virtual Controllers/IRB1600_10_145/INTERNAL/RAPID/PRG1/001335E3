@@ -1,31 +1,38 @@
 MODULE Module1
-    !***********************************************************
-    !
-    ! Module:  Module1
-    !
-    ! Description:
-    !   <Insert description here>
-    !
-    ! Author: Sirius
-    !
-    ! Version: 1.0
-    !
-    !***********************************************************
-    
-    
-    !***********************************************************
-    !
-    ! Procedure main
-    !
-    !   This is the entry point of your program
-    !
-    !***********************************************************
-    
-    PROC main()
-        !Add your code here
-    ENDPROC
-    
-    
+        CONST robtarget Target_10:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        
+        CONST robtarget storeX:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        CONST robtarget store0:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        CONST robtarget fieldCenter:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+        CONST num zazor := 30;
+        
+        VAR robtarget curStore;
+        
+        ! Player
+        ! 1 - X
+        ! 2 - 0
+        ! 0 - game over
+        VAR num Player:=1; 
+        
+        ! delta x To
+        VAR num dxT;
+        VAR num dyT;
+        VAR num dzT;
+        
+        
+        
+        VAR num field{3,3}:=[
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+        ];
+            
+            
+        
+        VAR pos curPosTo;
+
+
     PROC moveCube(robtarget pfrom, robtarget pto)
         grab(pfrom);
         stand(pto);
@@ -33,7 +40,7 @@ MODULE Module1
     
     PROC grab(robtarget point)
         MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
-        MoveL Offs(point, 0,0,30),v100,fine,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,zazor),v100,fine,gripper\WObj:=Workobject_1;
         PulseDO\High,do_GripClose;
 
         !WaitDI di_GripClosed,1;
@@ -42,10 +49,28 @@ MODULE Module1
     
     PROC stand(robtarget point)
         MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
-        MoveL Offs(point, 0,0,30),v100,fine,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,zazor),v100,fine,gripper\WObj:=Workobject_1;
         PulseDO\High,do_GripOpen;
         !WaitDI di_GripOpened,1;
         MoveJ point,v100,z1,gripper\WObj:=Workobject_1;
+    ENDPROC
+    
+    PROC moveX0()
+        
+        field{ 2 + dxT/60, 2 + dyT/60} := Player;
+        
+        IF Player=0 OR Player=1 THEN
+            curStore := storeX;
+            Player:=2;
+        ELSE 
+            curStore := store0;
+            Player:=1;
+        ENDIF
+        
+        moveCube curStore, Offs(fieldCenter, dXT,dyT, dzT);
+               
+           
+        
     ENDPROC
     
     
