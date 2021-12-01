@@ -40,10 +40,10 @@ namespace WindowGameX0
             this.tpsLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "PlayerStr")), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.tpsLabel1.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
             this.tpsLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tpsLabel1.Location = new System.Drawing.Point(500, 48);
+            this.tpsLabel1.Location = new System.Drawing.Point(274, 48);
             this.tpsLabel1.Multiline = true;
             this.tpsLabel1.Name = "tpsLabel1";
-            this.tpsLabel1.Size = new System.Drawing.Size(56, 56);
+            this.tpsLabel1.Size = new System.Drawing.Size(158, 79);
             this.tpsLabel1.Title = "tpsLabel1";
             this.tpsLabel1.Click += new System.EventHandler(this.tpsLabel1_Click);
             // 

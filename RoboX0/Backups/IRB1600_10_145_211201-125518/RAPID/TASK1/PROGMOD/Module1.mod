@@ -8,63 +8,72 @@ MODULE Module1
 
         CONST num zazor := 30;
         
-        VAR robtarget curStore;
-        
+               
         ! Player
         ! 1 - X
         ! 2 - 0
         ! 0 - game over
+        PERS string PlayerStr := "0";
+        VAR robtarget curStore;
         VAR num Player:=1; 
+        VAR num field{3,3}:=[
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+        ];
+        
         
         ! delta x To
         CONST num dxT :=0;
         CONST num dyT :=0;
         CONST num dzT :=0;
         
+        
         CONST num ActStep:=1;
         CONST num ActEndGame:=3;
-        CONST num ActWinGame:=3;
+        CONST num ActWinGame:=4;
         
-        PERS num Action:=0;
+        PERS num Action:=1;
         
-        VAR num field{3,3}:=[
-        [0,0,0],
-        [0,0,0],
-        [0,0,0]
-        ];
-            
-            
-        
-        VAR pos curPosTo;
+    PROC main()    
+        PlayerStr:="W";
+        Action :=0;
+        WHILE TRUE DO
+            chooseAction Action;            
+        ENDWHILE
+    ENDPROC
     
-        PROC main()
-
-        ENDPROC
-
-PROC chooseAction(num Action)
-    
-    IF Action = ActStep THEN 
-        moveX0;
-    ELSEIF Action = ActEndGame THEN
-        moveJ home, v100, z100, gripper;
-    ENDIF
-    
-    Action := 0;
+    PROC chooseAction(num Action)
         
-ENDPROC
-    
-    PROC moveX0()
-        field{ 2 + dxT/60, 2 + dyT/60} := Player;
-        
-        IF Player=0 OR Player=1 THEN
-            curStore := storeX;
-            Player:=2;
-        ELSE 
-            curStore := store0;
-            Player:=1;
+        IF Action = ActStep THEN 
+            moveX0;
+        ELSEIF Action = ActEndGame THEN
+            moveJ home, v100, z100, gripper;
         ENDIF
         
-        moveCube curStore, Offs(fieldCenter, dXT,dyT, dzT);
+        Action := 0;
+            
+    ENDPROC
+        
+    PROC moveX0()
+        VAR num i := 2 + dxT/60;
+        VAR num j := 4 -  2 + dyT/60;
+        
+        IF field{i,j}=0 THEN
+            field{i,j} := Player;
+            
+            IF Player=0 OR Player=1 THEN
+                curStore := storeX;
+                Player:=2;
+                PlayerStr:="0";
+            ELSE 
+                curStore := store0;
+                Player:=1;
+                PlayerStr:="X";
+            ENDIF
+            
+            moveCube curStore, Offs(fieldCenter, dXT,dyT, dzT);
+        ENDIF
     ENDPROC
     
     PROC moveCube(robtarget pfrom, robtarget pto)

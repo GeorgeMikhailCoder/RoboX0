@@ -8,19 +8,26 @@ MODULE Module1
 
         CONST num zazor := 30;
         
-        VAR robtarget curStore;
-        
+               
         ! Player
         ! 1 - X
         ! 2 - 0
         ! 0 - game over
+        PERS string PlayerStr := "5";
+        VAR robtarget curStore;
         VAR num Player:=1; 
-        PERS string PlayerStr := "0";
+        VAR num field{3,3}:=[
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+        ];
+        
         
         ! delta x To
         CONST num dxT :=0;
         CONST num dyT :=0;
         CONST num dzT :=0;
+        
         
         CONST num ActStep:=1;
         CONST num ActEndGame:=3;
@@ -28,37 +35,31 @@ MODULE Module1
         
         PERS num Action:=1;
         
-        VAR num field{3,3}:=[
-        [0,0,0],
-        [0,0,0],
-        [0,0,0]
-        ];
-            
-            
+    PROC main()    
+        PlayerStr:="W";
+        WHILE TRUE DO
+            chooseAction Action;            
+        ENDWHILE
+    ENDPROC
+    
+    PROC chooseAction(num Action)
         
-        VAR pos curPosTo;
-    
-        PROC main()
-            WHILE TRUE DO
-                chooseAction Action;            
-            ENDWHILE
-        ENDPROC
-
-PROC chooseAction(num Action)
-    
-    IF Action = ActStep THEN 
-        moveX0;
-    ELSEIF Action = ActEndGame THEN
-        moveJ home, v100, z100, gripper;
-    ENDIF
-    
-    Action := 0;
+        IF Action = ActStep THEN 
+            moveX0;
+        ELSEIF Action = ActEndGame THEN
+            moveJ home, v100, z100, gripper;
+        ENDIF
         
-ENDPROC
-    
+        Action := 0;
+            
+    ENDPROC
+        
     PROC moveX0()
-        IF field{ 2 + dxT/60, 2 + dyT/60}=0 THEN
-            field{ 2 + dxT/60, 2 + dyT/60} := Player;
+        VAR num i := 2 + dxT/60;
+        VAR num j := 4 -  2 + dyT/60;
+        
+        IF field{i,j}=0 THEN
+            field{i,j} := Player;
             
             IF Player=0 OR Player=1 THEN
                 curStore := storeX;
