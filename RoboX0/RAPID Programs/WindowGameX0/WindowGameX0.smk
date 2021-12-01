@@ -30,6 +30,7 @@
 		<Variable Name="middle" Value="0" ValueType="ABB.Robotics.Controllers.RapidDomain.Dnum,ABB.Robotics.Controllers.PC" />
 		<Variable Name="high" Value="60" ValueType="ABB.Robotics.Controllers.RapidDomain.Dnum,ABB.Robotics.Controllers.PC" />
 		<Variable Name="OText" Value="&quot;O&quot;" ValueType="ABB.Robotics.Controllers.RapidDomain.String,ABB.Robotics.Controllers.PC" />
+		<Variable Name="Action" Value="0" ValueType="ABB.Robotics.Controllers.RapidDomain.Dnum,ABB.Robotics.Controllers.PC" />
 	</ApplicationVariables>
 	<ItemGroup />
 	<ItemGroup>

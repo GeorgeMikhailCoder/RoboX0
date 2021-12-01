@@ -2,20 +2,14 @@
 <!--Comments: Settings for the FlexPendant.-->
 <FP>
   <USER name="">
-    <DATA id="IO View">
-      <PROP name="Configurations file" value="C:/Users/Sirius/Desktop/george/ProjectX0/RoboX0/Virtual Controllers/IRB1600_10_145/INTERNAL/FPConfigurations.xml" />
-      <PROP name="Signal view layout" value="Default" />
-    </DATA>
     <DATA id="ViewInAuto">
       <PROP name="text" value="PARAM_TXT_VIEWINAUTO" />
       <PROP name="dll" value="TpsViewProductionWnd.dll" />
       <PROP name="type" value="ABB.Robotics.Tps.Production.TpsViewProductionWnd" />
     </DATA>
-    <DATA id="Programmable Key_1">
-      <PROP name="type" value="None" />
-      <PROP name="allowInAuto" value="No" />
-      <PROP name="pressed" value="" />
-      <PROP name="target" value="" />
+    <DATA id="IO View">
+      <PROP name="Configurations file" value="C:/Users/Sirius/Desktop/george/ProjectX0/RoboX0/Virtual Controllers/IRB1600_10_145/INTERNAL/FPConfigurations.xml" />
+      <PROP name="Signal view layout" value="Default" />
     </DATA>
     <DATA id="UASViewLevel">
       <PROP name="text" value="PARAM_TXT_UASVIEWLEVEL" />
@@ -77,6 +71,12 @@
       <PROP name="Safety Signal Filter" value="" />
       <PROP name="Alias IO Filter" value="" />
       <PROP name="Simulated IO FIlter" value="" />
+    </DATA>
+    <DATA id="Programmable Key_1">
+      <PROP name="type" value="None" />
+      <PROP name="allowInAuto" value="No" />
+      <PROP name="pressed" value="" />
+      <PROP name="target" value="" />
     </DATA>
     <DATA id="Programmable Key_4">
       <PROP name="type" value="None" />

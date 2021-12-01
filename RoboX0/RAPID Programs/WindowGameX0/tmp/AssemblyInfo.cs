@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTrademarkAttribute("")]
 [assembly: System.Reflection.AssemblyCultureAttribute("")]
 [assembly: System.Reflection.AssemblyVersionAttribute("6.12.184")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("21.3.9648.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("21.3.9676.1")]
 [assembly: ABB.Robotics.Tps.Taf.TpsViewAttribute("Run X0 Game", "tpu-Operator32.png", "tpu-Operator32.png", "TpsViewWindowGameX0.dll", "WindowGameX0.MainScreen", ABB.Robotics.Tps.Taf.StartPanelLocation.Left, ABB.Robotics.Tps.Taf.TpsViewType.Static, ABB.Robotics.Tps.Taf.TpsViewStartupTypes.Manual)]
 
 
