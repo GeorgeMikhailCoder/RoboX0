@@ -19,9 +19,35 @@ namespace WindowGameX0
     public class MainScreen : ABB.Robotics.ScreenMaker.Windows.Forms.ScreenForm
     {
         
-        private ABB.Robotics.Tps.Windows.Forms.Button button1;
+        private ABB.Robotics.Tps.Windows.Forms.Button button2;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button3;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button6;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button4;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button5;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button7;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button8;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button9;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button12;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button10;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button11;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button13;
         
         private ABB.Robotics.Tps.Windows.Forms.TpsLabel tpsLabel1;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Switch switch1;
+        
+        private ABB.Robotics.Tps.Windows.Forms.Button button1;
         
         public MainScreen()
         {
@@ -31,41 +57,275 @@ namespace WindowGameX0
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.tpsLabel1 = new ABB.Robotics.Tps.Windows.Forms.TpsLabel();
             this.button1 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button2 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button3 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button6 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button4 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button5 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button7 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button8 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button9 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button12 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button10 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button11 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.button13 = new ABB.Robotics.Tps.Windows.Forms.Button();
+            this.tpsLabel1 = new ABB.Robotics.Tps.Windows.Forms.TpsLabel();
+            this.switch1 = new ABB.Robotics.Tps.Windows.Forms.Switch();
             this.SuspendLayout();
-            // 
-            // tpsLabel1
-            // 
-            this.tpsLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "PlayerStr")), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.tpsLabel1.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
-            this.tpsLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tpsLabel1.Location = new System.Drawing.Point(274, 48);
-            this.tpsLabel1.Multiline = true;
-            this.tpsLabel1.Name = "tpsLabel1";
-            this.tpsLabel1.Size = new System.Drawing.Size(158, 79);
-            this.tpsLabel1.Title = "tpsLabel1";
-            this.tpsLabel1.Click += new System.EventHandler(this.tpsLabel1_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.button1.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(27, 48);
+            this.button1.Location = new System.Drawing.Point(21, 43);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 79);
+            this.button1.Size = new System.Drawing.Size(80, 70);
             this.button1.Text = "button1";
             this.button1.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown_1);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button2.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(107, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 70);
+            this.button2.Text = "button2";
+            this.button2.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
+            this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button2_MouseUp);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button3.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.Location = new System.Drawing.Point(193, 43);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 70);
+            this.button3.Text = "button3";
+            this.button3.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button3_MouseDown);
+            this.button3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button3_MouseUp);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button6.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button6.Location = new System.Drawing.Point(21, 119);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 70);
+            this.button6.Text = "button6";
+            this.button6.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button6_MouseDown);
+            this.button6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button6_MouseUp);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button4.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button4.Location = new System.Drawing.Point(193, 119);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 70);
+            this.button4.Text = "button4";
+            this.button4.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button4_MouseDown);
+            this.button4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button4_MouseUp);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button5.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button5.Location = new System.Drawing.Point(107, 119);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 70);
+            this.button5.Text = "button5";
+            this.button5.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button5_MouseDown);
+            this.button5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button7.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button7.Location = new System.Drawing.Point(21, 195);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(80, 70);
+            this.button7.Text = "button7";
+            this.button7.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button7_MouseDown);
+            this.button7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button7_MouseUp);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(2)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button8.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button8.Location = new System.Drawing.Point(107, 195);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(80, 70);
+            this.button8.Text = "button8";
+            this.button8.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button8_MouseDown);
+            this.button8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button8_MouseUp);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "strField"), new ABB.Robotics.ScreenMaker.Windows.Forms.Index[] {
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(1),
+                                new ABB.Robotics.ScreenMaker.Windows.Forms.Index(3)}), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.button9.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button9.Location = new System.Drawing.Point(193, 195);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(80, 70);
+            this.button9.Text = "button9";
+            this.button9.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button9_MouseDown);
+            this.button9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button9_MouseUp);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button12.Location = new System.Drawing.Point(487, 216);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(118, 49);
+            this.button12.Text = "End game";
+            this.button12.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button12_MouseDown);
+            this.button12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button12_MouseUp);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button10.Location = new System.Drawing.Point(487, 161);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(118, 49);
+            this.button10.Text = "Start game";
+            this.button10.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button10_MouseDown);
+            this.button10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button10_MouseUp);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button11.Location = new System.Drawing.Point(487, 106);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(118, 49);
+            this.button11.Text = "Clear field";
+            this.button11.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button11_MouseDown);
+            this.button11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button11_MouseUp);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.button13.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button13.Location = new System.Drawing.Point(487, 51);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(118, 49);
+            this.button13.Text = "Draw field";
+            this.button13.TextAlign = ABB.Robotics.Tps.Windows.Forms.ContentAlignmentABB.MiddleCenter;
+            this.button13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button13_MouseDown);
+            this.button13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button13_MouseUp);
+            // 
+            // tpsLabel1
+            // 
+            this.tpsLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "status")), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.tpsLabel1.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.tpsLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tpsLabel1.Location = new System.Drawing.Point(305, 43);
+            this.tpsLabel1.Multiline = true;
+            this.tpsLabel1.Name = "tpsLabel1";
+            this.tpsLabel1.Size = new System.Drawing.Size(164, 222);
+            this.tpsLabel1.Title = "tpsLabel1";
+            // 
+            // switch1
+            // 
+            this.switch1.DataBindings.Add(new System.Windows.Forms.Binding("Value", new ABB.Robotics.ScreenMaker.Windows.Forms.SingleBindingSource(new ABB.Robotics.DataBinding.RapidDataObject("T_ROB1", "Module1", "isXstart")), "Value", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.switch1.Font = ABB.Robotics.Tps.Windows.Forms.TpsFont.Font12b;
+            this.switch1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.switch1.Location = new System.Drawing.Point(487, 281);
+            this.switch1.Name = "switch1";
+            this.switch1.OffValue = false;
+            this.switch1.OnValue = true;
+            this.switch1.Size = new System.Drawing.Size(118, 36);
+            this.switch1.Text = "switch1";
             // 
             // MainScreen
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.switch1);
             this.Controls.Add(this.tpsLabel1);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button6, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.button5, 0);
+            this.Controls.SetChildIndex(this.button7, 0);
+            this.Controls.SetChildIndex(this.button8, 0);
+            this.Controls.SetChildIndex(this.button12, 0);
+            this.Controls.SetChildIndex(this.button9, 0);
+            this.Controls.SetChildIndex(this.button10, 0);
+            this.Controls.SetChildIndex(this.button11, 0);
+            this.Controls.SetChildIndex(this.button13, 0);
             this.Controls.SetChildIndex(this.tpsLabel1, 0);
+            this.Controls.SetChildIndex(this.switch1, 0);
             this.ResumeLayout(false);
         }
         #endregion
@@ -161,6 +421,57 @@ namespace WindowGameX0
                 // Calling RapidDataWrite
                 ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["high"];
                 ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_Click", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button1_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button1_MouseDown_1(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
                 // Calling RapidDataRead
                 ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
                 write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
@@ -170,7 +481,492 @@ namespace WindowGameX0
             }
             catch (System.Exception ex)
             {
-                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_Click", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_MouseDown_1", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button1_MouseUp_1(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button1_MouseUp_1", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button2_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button2_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button2_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button2_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button3_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button3_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button3_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button3_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button6_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button6_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button6_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button6_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button4_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button4_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button4_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button4_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button5_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button5_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button5_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button5_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button7_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button7_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button7_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button7_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button8_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["middle"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button8_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button8_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button8_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button9_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["high"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dxT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_0.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["low"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/dyT").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActStep").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button9_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button9_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["Action"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button9_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button10_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butStart").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button10_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button10_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button10_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button12_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butEnd").Value;
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["Action"];
+                write_1.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActEndGame").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_2.Value));
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button12_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button12_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_2 = this.ScreenServices.ApplicationVariables["Action"];
+                write_2.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/ActWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_3 = this.ScreenServices.ApplicationVariables["Action"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/Action").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_3.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button12_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button11_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butClear").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button11_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button11_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button11_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button13_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butDraw").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button13_MouseDown", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
+            }
+        }
+        
+        private void button13_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                // Calling RapidDataRead
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_0 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                write_0.Value = ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/butWait").Value;
+                // Calling RapidDataWrite
+                ABB.Robotics.ScreenMaker.Base.IApplicationVariable write_1 = this.ScreenServices.ApplicationVariables["buttonPressed"];
+                ABB.Robotics.ScreenMaker.Windows.Forms.DataManager.GetRapidData(this, "RAPID/T_ROB1/Module1/buttonPressed").Value = ((ABB.Robotics.Controllers.RapidDomain.IRapidData)(write_1.Value));
+            }
+            catch (System.Exception ex)
+            {
+                ABB.Robotics.Tps.Windows.Forms.GTPUMessageBox.Show(this, null, ex.ToString(), "Unexpected Error in button13_MouseUp", System.Windows.Forms.MessageBoxIcon.Hand, System.Windows.Forms.MessageBoxButtons.OK);
             }
         }
     }

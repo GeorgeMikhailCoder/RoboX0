@@ -1,0 +1,119 @@
+MODULE Module1
+        CONST robtarget Target_10:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        
+        CONST robtarget home:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        CONST robtarget storeX:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        CONST robtarget store0:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+        CONST robtarget fieldCenter:=[[199.621572681,690,-886.5],[0,0.5,0,0.866025404],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+        CONST num zazor := 30;
+        
+               
+        ! Player
+        ! 1 - X
+        ! 2 - 0
+        ! 0 - game over
+        PERS string strPlayer := "W";
+        VAR robtarget curStore;
+        VAR num Player:=1; 
+        VAR num field{3,3}:=[
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+        ];
+        
+        PERS num curCoord := 32;
+        PERS string strField{3,3}:=[
+        [" "," "," "],
+        [" "," "," "],
+        [" "," "," "]
+        ];
+        
+        ! delta x To
+        PERS num dxT :=-1;
+        PERS num dyT :=1;
+        PERS num dzT :=0;
+        
+        CONST num ActWait:=0;
+        CONST num ActStep:=1;
+        CONST num ActEndGame:=3;
+        CONST num ActWinGame:=4;
+        
+        PERS num Action:=0;
+        
+        
+    PROC init()
+        Action :=0;
+        FOR i FROM 1 TO 3 DO
+            FOR j FROM 1 TO 3 DO
+                strField{i,j} := " ";
+            ENDFOR
+        ENDFOR
+        strPlayer := "W";
+    ENDPROC
+
+        
+    PROC main()    
+        init;
+        WHILE TRUE DO
+            chooseAction Action;            
+        ENDWHILE
+    ENDPROC
+    
+    PROC chooseAction(num Action)
+        
+        IF Action = ActStep THEN 
+            moveX0;
+        ELSEIF Action = ActEndGame THEN
+            moveJ home, v100, z100, gripper;
+        ENDIF            
+    ENDPROC
+        
+    PROC moveX0()
+               
+        curCoord := 10* (dyT+2) + (dxT+2);
+!        IF strField{i,j}=" " THEN
+            strField{dyT + 2, dxT + 2} := strPlayer;
+            switchPlayer;            
+            moveCube curStore, Offs(fieldCenter, 2*zazor*dXT, 2*zazor*dyT, 2*zazor*dzT);
+!       ENDIF
+    ENDPROC
+    
+    PROC switchPlayer()
+        IF strPlayer="X" THEN
+            curStore := storeX;
+            strPlayer:="0";
+        ELSE 
+            curStore := store0;
+            strPlayer:="X";
+        ENDIF
+    ENDPROC
+    
+    PROC moveCube(robtarget pfrom, robtarget pto)
+        grab(pfrom);
+        stand(pto);
+    ENDPROC    
+    
+    PROC grab(robtarget point)
+        MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,zazor),v100,fine,gripper\WObj:=Workobject_1;
+        PulseDO\High,do_GripClose;
+
+        !WaitDI di_GripClosed,1;
+        MoveJ point,v100,z1,gripper\WObj:=Workobject_1;
+    ENDPROC
+    
+    PROC stand(robtarget point)
+        MoveJ point,v1000,z1,gripper\WObj:=Workobject_1;
+        MoveL Offs(point, 0,0,zazor),v100,fine,gripper\WObj:=Workobject_1;
+        PulseDO\High,do_GripOpen;
+        !WaitDI di_GripOpened,1;
+        MoveJ point,v100,z1,gripper\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_10()
+        MoveL Target_10,v1000,z100,gripper\WObj:=Workobject_1;
+    ENDPROC
+
+    
+    
+ENDMODULE
